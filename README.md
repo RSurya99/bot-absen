@@ -21,8 +21,6 @@ pip install pymysql
 
 ```python
 from flask import Flask, render_template, request, redirect, url_for, flash
-import requests
-import datetime
 from twilio.twiml.messaging_response import MessagingResponse
 from flask_sqlalchemy import SQLAlchemy
 ```
