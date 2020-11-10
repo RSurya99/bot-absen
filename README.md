@@ -4,6 +4,7 @@ Attendance bot is a bot that used to manage attendance reports
 
 ## Requirement & Installation
 Python 3.8 or above
+
 create virtual environment using virtualenv
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all the requirement.
