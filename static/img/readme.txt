@@ -1,1 +1,1 @@
-add images file here
+add image files here
