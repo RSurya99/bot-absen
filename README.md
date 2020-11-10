@@ -33,7 +33,7 @@ from flask_sqlalchemy import SQLAlchemy
 - attendace via android app (same function as web)
 - data report and can be exported to excel
 
-for point 2 until 4 still in the manufacturing stage
+for point 2 until 4 still under development
 
 
 ## License
