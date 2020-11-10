@@ -1,0 +1,11 @@
+gradient : first color(#ffcf0e) second color(#ff7e00) angle : -81deg scale: 150%
+orange : #DC761C / #ff7e00 (mostly used)
+heavy metal : #263225
+yellow : #F5F332 / #ffcf0e (mostly used)
+text : #FFF / #333
+dusty gray : #959090
+https://undraw.co/search
+
+id, tanggal, nama, jam absen, keterangan
+
+https://www.twilio.com/console/sms/whatsapp/sandbox
