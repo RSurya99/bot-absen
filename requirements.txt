@@ -1,0 +1,5 @@
+Twilio
+Flask
+SQLAlchemy
+Flask-SQLAlchemy
+pymysql

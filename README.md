@@ -1,38 +1,21 @@
-# Bot-absen / Attendance-bot (experimental)
+# Attendance Bot using Twilio Whatsapp
 
-Attendance bot is a bot that used to manage attendance reports
+Attendance bot is a bot that used to manage attendance reports. This bot created using Flask, MySQL, and Twilio.
 
-## Requirement & Installation
+## Environment
 Python 3.8 or above
 
-create virtual environment using virtualenv
+## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all the requirement.
+- Create virtualenv and run this command
+    ```bash
+    pip install requirements.txt
+    ```
 
-```bash
-pip install Twilio
-pip install Flask
-pip install SQLAlchemy
-pip install pymysql
-
-```
-
-## Usage
-
-```python
-from flask import Flask, render_template, request, redirect, url_for, flash
-from twilio.twiml.messaging_response import MessagingResponse
-from flask_sqlalchemy import SQLAlchemy
-```
+- Create the database and configure it in `App.py`
+- Set the app to debug mode and run it
+- For development, use ngrok to deploy it temporary and copy the url
+- Paste the url in your twilio project and `App.py`
 
 ## Features
-- attendance via whatsapp (only for specific subjects)
-- attendance via web with face tracking (for daily attendance)
-- attendace via android app (same function as web)
-- data report and can be exported to excel
-
-for point 2 until 4 still under development
-
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+- attendance via whatsapp (only for registered user in database)

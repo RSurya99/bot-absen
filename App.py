@@ -4,14 +4,14 @@ import datetime
 from twilio.twiml.messaging_response import MessagingResponse
 from flask_sqlalchemy import SQLAlchemy
 
-DOWNLOAD_DIRECTORY = '/https://8f22ea76d9c4.ngrok.io/bot'
+DOWNLOAD_DIRECTORY = 'YOUR_DOWNLOAD_DIRECTORY_FOR_NGROK'
 app = Flask(__name__)
-app.secret_key = "Secret Key"
+app.secret_key = "YOUR_SECRET_KEY"
 
-DB_USER = "root"
-DB_PASS = ""
-DB_HOST = "localhost"
-DATABASE = "absensi_rpl"
+DB_USER = "YOUR_DATABASE_USER"
+DB_PASS = "YOUR_DATABASE_PASSWORD"
+DB_HOST = "YOUR_DATABASE_HOST"
+DATABASE = "YOUR_DATABASE_NAME"
 app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql+pymysql://{}:{}@{}/{}'.format(DB_USER, DB_PASS, DB_HOST, DATABASE)    #"mysql+pymysql://root:NO@localhost/flask_crud"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
@@ -61,7 +61,7 @@ def bot():
 
 @app.route('/')
 def index():
-    return "fathur nanti masukkin datanya disini ya"
+    return "<h1>Add views for data here</h1>"
 
 if __name__ == '__main__':
     app.run(debug=True)
